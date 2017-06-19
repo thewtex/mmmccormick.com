@@ -6,5 +6,14 @@
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-router": "^3.0.5"
+  },
+  "phenomic": {
+    "presets": [
+      "@phenomic/preset-react-app"
+    ]
+  },
+  "scripts": {
+    "start": "phenomic start",
+    "build": "phenomic build"
   }
 }

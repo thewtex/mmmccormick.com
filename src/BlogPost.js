@@ -1,8 +1,10 @@
 import React from 'react'
 import { BodyRenderer } from '@phenomic/preset-react-app/lib/client'
 
+import Layout from './Layout'
+
 const BlogPost = ({ page }) =>
-  <div>
+  <Layout>
     {page.node &&
     <article>
       <h1>{page.node.title}</h1>
@@ -10,6 +12,6 @@ const BlogPost = ({ page }) =>
         {page.node.body}
       </BodyRenderer>
     </article>}
-  </div>
+  </Layout>
 
 export default BlogPost

@@ -1,9 +1,11 @@
-import Head from 'react-helmet'
 import React from 'react'
+import Head from 'react-helmet'
 import { Link } from 'react-router'
 
+import Layout from './Layout'
+
 const Home = ({ posts }) =>
-  <div>
+  <Layout>
     <Head>
       <title>Hello world</title>
       <meta name='description' content='Everything is awesome!' />
@@ -23,6 +25,6 @@ const Home = ({ posts }) =>
         <Link to={`/after/${posts.node.next}`}>Older posts</Link>
       }
     </ul>
-  </div>
+  </Layout>
 
 export default Home

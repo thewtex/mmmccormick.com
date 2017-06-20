@@ -1,6 +1,6 @@
 import React from 'react'
 import { Router, Route, browserHistory } from 'react-router'
-import { createApp } from '@phenomic/preset-react-app/lib/client'
+import { createApp, renderApp } from '@phenomic/preset-react-app/lib/client'
 
 import BlogPostContainer from './src/BlogPostContainer'
 import HomeContainer from './src/HomeContainer'
@@ -14,3 +14,7 @@ const routes = () =>
   </Router>
 
 export default createApp(routes, Html)
+
+if (module.hot) {
+  module.hot.accept(() => renderApp(routes))
+}

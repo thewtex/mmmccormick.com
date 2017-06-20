@@ -1,16 +1,6 @@
-import React from 'react'
-import { createContainer, query, BodyRenderer } from '@phenomic/preset-react-app/lib/client'
+import { createContainer, query } from '@phenomic/preset-react-app/lib/client'
 
-const BlogPost = ({ page }) =>
-  <div>
-    {page.node &&
-    <article>
-      <h1>{page.node.title}</h1>
-      <BodyRenderer>
-        {page.node.body}
-      </BodyRenderer>
-    </article>}
-  </div>
+import BlogPost from './BlogPost'
 
 const BlogPostContainer = createContainer(BlogPost, props => ({
   page: query({ collection: 'posts', id: props.params.splat })

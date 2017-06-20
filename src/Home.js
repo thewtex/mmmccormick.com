@@ -11,6 +11,7 @@ const Home = ({ posts }) =>
       <meta name='description' content='Everything is awesome!' />
     </Head>
     <h1>Home</h1>
+  {/*
     <ul>
       {posts &&
         posts.node &&
@@ -25,6 +26,7 @@ const Home = ({ posts }) =>
         <Link to={`/after/${posts.node.next}`}>Older posts</Link>
       }
     </ul>
+   */}
   </Layout>
 
 export default Home

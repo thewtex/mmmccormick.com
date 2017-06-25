@@ -1,0 +1,33 @@
+
+/*@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700&text=Matt%20McCormick');*/
+@font-face {
+  font-family: 'Linux Libertine';
+  src: url("/fonts/LinLibertine_R_subset.woff") format('woff');
+}
+@font-face {
+  font-family: 'Linux Libertine';
+  src: url("/fonts/LinLibertine_RB_subset.woff") format('woff');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'Linux Libertine';
+  src: url("/fonts/LinLibertine_RI_subset.woff") format('woff');
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Linux Biolinum';
+  src: url("/fonts/LinBiolinum_R_subset.woff") format('woff');
+}
+
+body {
+  font-family: 'Linux Libertine', constantia, 'hoefler text', 'palatino linotype', serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Linux Biolinum', corbel,'gill sans','gill sans mt', sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+.name-logo {
+  font-family: 'Open Sans Condensed', sans-serif;
+}

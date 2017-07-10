@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import {
   Absolute,
+  Avatar,
   Toolbar,
   NavLink,
 } from 'rebass'
@@ -13,6 +14,7 @@ const CustomNameNavLink = styled(NavLink)`
 const NavBar = props => (
   <div>
     <Toolbar py={2}>
+      <Avatar size={24} src='/images/headshot.jpeg' />
       <CustomNameNavLink href="https://mmmccormick.com/" children='Matt McCormick'/>
     </Toolbar>
   </div>

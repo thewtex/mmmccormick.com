@@ -2,8 +2,6 @@ import React from 'react'
 import { Router, Route, browserHistory } from 'react-router'
 import { createApp, renderApp } from '@phenomic/preset-react-app/lib/client'
 
-import './src/App.css'
-
 import BlogPostContainer from './src/BlogPostContainer'
 import HomeContainer from './src/HomeContainer'
 import Html from './src/Html'

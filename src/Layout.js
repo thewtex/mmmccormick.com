@@ -1,21 +1,26 @@
 import React from 'react'
 import Head from 'react-helmet'
+import {
+  Provider
+} from 'rebass'
+
+import theme from './theme.js'
+import NavBar from './NavBar'
 
 const Layout = ({ children }) =>
-  <div>
+  <Provider theme={theme}>
     <Head>
       <html lang='en' /> {/* this is valid react-helmet usage! */}
       <meta charSet='utf-8' />
       <meta name='viewport' content='width=device-width, initial-scale=1' />
     </Head>
-    <header>
+    <NavBar/>
       {/* Blog About Portfolio
         OpenCV Twitter GitHub LinkedIn... */}
-    </header>
     <div>{children}</div>
     <footer>
       {/* ... */}
     </footer>
-  </div>
+  </Provider>
 
 export default Layout

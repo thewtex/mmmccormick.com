@@ -35,7 +35,7 @@ export const weights = [
   700
 ]
 
-const palette = palx('#07c')
+const palette = palx('#90cefc')
 
 const flattened = Object.keys(palette)
   .reduce((a, key) => {

@@ -1,6 +1,12 @@
 import React from 'react'
 import Head from 'react-helmet'
 
+import {
+  NavItem,
+  Space,
+  Toolbar
+} from 'rebass'
+
 import Layout from './Layout'
 
 const Home = ({ posts }) =>
@@ -9,8 +15,15 @@ const Home = ({ posts }) =>
       <title>Matthew M. McCormick, Ph.D.</title>
       <meta name='Matthew M. McCormick, Ph.D.' content='Matt McCormick&#39;s Homepage' />
     </Head>
+
+    <Toolbar>
+      <NavItem href="https://mmmccormick.com/">
+        <div className='name-logo'>Matt McCormick</div>
+      </NavItem>
+      <Space auto />
+    </Toolbar>
+
     <h1>Home</h1>
-    <div className='name-logo'>Matt McCormick</div>
     <h1>Header 1</h1>
     <h2>Header 2</h2>
     <h3>Header 3</h3>

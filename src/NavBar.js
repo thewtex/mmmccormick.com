@@ -14,8 +14,8 @@ const CustomNameNavLink = styled(NavLink)`
 const NavBar = props => (
   <div>
     <Toolbar py={2}>
-      <Avatar size={24} src='/images/headshot.jpeg' />
-      <CustomNameNavLink href="https://mmmccormick.com/" children='Matt McCormick'/>
+      <Avatar size={24} src='/images/NavBarHeadshot.jpg' />
+      <CustomNameNavLink href='https://mmmccormick.com/' children='Matt McCormick'/>
     </Toolbar>
   </div>
 )

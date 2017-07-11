@@ -1,3 +1,9 @@
 public/ filter=lfs diff=lfs merge=lfs -text
 public/images/AboutHeadshot.jpg filter=lfs diff=lfs merge=lfs -text
 public/images/CC0.svg filter=lfs diff=lfs merge=lfs -text
+public/fonts/font-awesome-4.7.0.min.css filter=lfs diff=lfs merge=lfs -text
+public/fonts/fontawesome-webfont.woff2 filter=lfs diff=lfs merge=lfs -text
+public/fonts/fontawesome-webfont.eot filter=lfs diff=lfs merge=lfs -text
+public/fonts/fontawesome-webfont.svg filter=lfs diff=lfs merge=lfs -text
+public/fonts/fontawesome-webfont.ttf filter=lfs diff=lfs merge=lfs -text
+public/fonts/fontawesome-webfont.woff filter=lfs diff=lfs merge=lfs -text

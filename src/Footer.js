@@ -1,4 +1,5 @@
 import React from 'react'
+import FontAwesome from 'react-fontawesome'
 import {
   Box,
   Flex,
@@ -13,8 +14,12 @@ const Footer = props => (
   <footer>
     <Flex mx={-2} py={4} align='flex-end'>
       <Box>
-        <Text>{`Built with `}
-        <Link href='http://phenomic.io' children='Phenomic.io' />
+        <Text>
+        <Link href='https://github.com/thewtex/mmmccormick.com'>
+          <FontAwesome size='lg' name='github'/>
+        </Link>
+        {` Built with `}
+        <Link href='https://phenomic.io' children='Phenomic.io' />
         </Text>
       </Box>
       <NavLink

@@ -6,6 +6,7 @@ import {
 
 import theme from './theme.js'
 import NavBar from './NavBar'
+import Footer from './Footer'
 
 const Layout = ({ children }) =>
   <Provider theme={theme}>
@@ -19,9 +20,7 @@ const Layout = ({ children }) =>
       {/* Blog About Portfolio
         OpenCV Twitter GitHub LinkedIn... */}
     <div>{children}</div>
-    <footer>
-      {/* ... */}
-    </footer>
+    <Footer/>
   </Provider>
 
 export default Layout

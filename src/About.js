@@ -5,9 +5,11 @@ import {
   Border,
   Box,
   Card,
+  Link,
   Flex,
   Text
 } from 'rebass'
+import FontAwesome from 'react-fontawesome'
 
 import Layout from './Layout'
 import PageError from './PageError'
@@ -28,8 +30,10 @@ const About = ({ hasError, page }) => {
               <BackgroundImage
                  src='/images/AboutHeadshot.jpg'
                  />
-              <Subhead p={2}>
-                About
+              <Subhead center p={2}>
+                <Link href='https://github.com/thewtex/'>
+                  <FontAwesome size='lg' name='github'/>
+                </Link>
               </Subhead>
             </Card>
           </Box>

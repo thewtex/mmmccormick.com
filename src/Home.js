@@ -5,9 +5,9 @@ import {
   Border,
   Box,
   Card,
-  Flex,
-  Text
+  Flex
 } from 'rebass'
+import { Link } from 'react-router'
 
 import Layout from './Layout'
 import Heading from './Heading'
@@ -27,14 +27,16 @@ const Home = ({ posts }) => (
     <Flex wrap align='flex-start' justify='center'>
 
       <Box p={2} width={boxWidth}>
-        <Card width={cardWidth} >
-          <BackgroundImage
-             src='/images/AboutHeadshot.jpg'
-             />
-          <Subhead p={2}>
-            About
-          </Subhead>
-        </Card>
+        <Link href='/about'>
+          <Card width={cardWidth} >
+            <BackgroundImage
+               src='/images/AboutHeadshot.jpg'
+               />
+            <Subhead p={2}>
+              About
+            </Subhead>
+          </Card>
+        </Link>
       </Box>
 
     </Flex>

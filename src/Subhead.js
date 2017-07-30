@@ -8,4 +8,3 @@ const CustomSubhead = styled(Subhead)`
 `
 
 export default CustomSubhead
-

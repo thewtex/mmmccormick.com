@@ -20,6 +20,7 @@
 
 body {
   font-family: 'Linux Libertine', constantia, 'hoefler text', 'palatino linotype', serif;
+  line-height: 140%;
 }
 
 h1, h2, h3, h4, h5, h6 {

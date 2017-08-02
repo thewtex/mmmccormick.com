@@ -45,7 +45,7 @@ const NavBar = props => (
   <nav>
     <Toolbar py={2}>
       <Avatar size={24} src='/images/NavBarHeadshot.jpg' />
-      <CustomFontNavLink href='https://mmmccormick.com/' children='Matt McCormick'/>
+      <CustomFontNavLink href='https://www.mmmccormick.com/' children='Matt McCormick'/>
       <Hide xs>
         <Svg>
           <polyline

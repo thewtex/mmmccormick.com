@@ -1,4 +1,10 @@
 {
+  "description": "Sources for Matthew McCormick's homepage, https://www.mmmccormick.com",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thewtex/mmmccormick.com.git"
+  },
   "devDependencies": {
     "@phenomic/cli": "^1.0.0-alpha.4",
     "@phenomic/core": "^1.0.0-alpha.4",

@@ -5,3 +5,5 @@ yarn.lock
 
 # phenomic build
 dist
+
+.netlify

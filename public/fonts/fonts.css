@@ -2,20 +2,24 @@
 @font-face {
   font-family: 'Linux Libertine';
   src: url("/fonts/LinLibertine_R_subset.woff") format('woff');
+  font-display: swap;
 }
 @font-face {
   font-family: 'Linux Libertine';
   src: url("/fonts/LinLibertine_RB_subset.woff") format('woff');
   font-weight: bold;
+  font-display: swap;
 }
 @font-face {
   font-family: 'Linux Libertine';
   src: url("/fonts/LinLibertine_RI_subset.woff") format('woff');
   font-style: italic;
+  font-display: swap;
 }
 @font-face {
   font-family: 'Linux Biolinum';
   src: url("/fonts/LinBiolinum_R_subset.woff") format('woff');
+  font-display: swap;
 }
 
 body {

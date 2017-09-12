@@ -6,8 +6,8 @@ var urlsToCache = [
   '/images/AboutHeadshot.jpg',
   '/images/NavBarHeadshot.jpg',
   '/phenomic.main.js',
-  '/about/index.html',
-  '/fonts/academicons.ttf',
+  '/about',
+  '/fonts/academicons.ttf?v=1.8.0',
   '/fonts/fonts.css',
   '/fonts/LinLibertine_RB_subset.woff',
   '/fonts/fontawesome-webfont.woff2?v=4.7.0',
@@ -39,5 +39,21 @@ self.addEventListener('fetch', function(event) {
         return fetch(event.request)
       }
     )
+  )
+})
+
+self.addEventListener('activate', function(event) {
+  var cacheWhitelist = ['site-cache-v1']
+
+  event.waitUntil(
+    caches.keys().then(function(cacheNames) {
+      return Promise.all(
+        cacheNames.map(function(cacheName) {
+          if (cacheWhitelist.indexOf(cacheName) === -1) {
+            return caches.delete(cacheName)
+          }
+        })
+      )
+    })
   )
 })

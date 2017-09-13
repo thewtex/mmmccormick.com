@@ -1,4 +1,6 @@
-module.exports = {
+const workboxBuild = require('workbox-build')
+
+workboxBuild.injectManifest({
   "globDirectory": "dist/",
   "globPatterns": [
     "**/*.{html,ico,css,woff2,jpg,js}",
@@ -13,4 +15,6 @@ module.exports = {
     "serviceWorker.js",
     "registerServiceWorker.js"
   ]
-}
+}).then(() => {
+  console.log('The production service worker has been generated.');
+})

@@ -19,7 +19,7 @@
     "react-router": "^3.0.5",
     "rebass": "^1.0.3",
     "shx": "^0.2.2",
-    "workbox-cli": "^2.0.1"
+    "workbox-build": "^2.0.1"
   },
   "phenomic": {
     "presets": [
@@ -28,6 +28,6 @@
   },
   "scripts": {
     "start": "phenomic start",
-    "build": "phenomic build && shx cp ./node_modules/workbox-sw/build/importScripts/workbox-sw.prod.v2.0.1.js ./dist && npx workbox inject:manifest"
+    "build": "phenomic build && shx cp ./node_modules/workbox-sw/build/importScripts/workbox-sw.prod.v2.0.1.js ./dist && node generate-sw.js"
   }
 }

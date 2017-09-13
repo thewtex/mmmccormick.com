@@ -3,8 +3,9 @@ const workboxBuild = require('workbox-build')
 workboxBuild.injectManifest({
   "globDirectory": "dist/",
   "globPatterns": [
-    "**/*.{html,ico,css,woff2,jpg,js}",
+    "**/*.{html,ico,css,jpg,js}",
     "fonts/*_subset.woff",
+    "fonts/*.{css,woff2}",
     "images/*.svg",
     "fonts/academicons.ttf"
   ],

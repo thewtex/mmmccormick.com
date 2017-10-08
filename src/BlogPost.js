@@ -11,13 +11,16 @@ const BlogPost = ({ hasError, page }) => {
 
   return (
     <Layout>
-      {page.node &&
+      {isLoading && "Loading..."}
+      {!isLoading &&
+      page.node && (
       <article>
         <h1>{page.node.title}</h1>
         <BodyRenderer>
           {page.node.body}
         </BodyRenderer>
-      </article>}
+      </article>
+      )}
     </Layout>
   )
 }

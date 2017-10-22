@@ -39,6 +39,19 @@ const Home = ({ posts }) => (
         </Link>
       </Box>
 
+      <Box p={2} width={boxWidth}>
+        <Link href='/blog'>
+          <Card width={cardWidth} >
+            <BackgroundImage
+               src='/images/BlogMythicalManMonth.png'
+               />
+            <Subhead p={2}>
+              Blog
+            </Subhead>
+          </Card>
+        </Link>
+      </Box>
+
     </Flex>
     </Border>
 

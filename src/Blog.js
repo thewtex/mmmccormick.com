@@ -5,7 +5,7 @@ import { BodyRenderer } from '@phenomic/preset-react-app/lib/client'
 import Layout from './Layout'
 import PageError from './PageError'
 
-const BlogPost = ({ isLoading, page }) => (
+const Blog = ({ isLoading, page }) => (
   <Layout>
   {isLoading && "Loading..."}
   {!isLoading &&
@@ -18,4 +18,4 @@ const BlogPost = ({ isLoading, page }) => (
   </Layout>
 )
 
-export default BlogPost
+export default Blog

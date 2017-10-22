@@ -3,6 +3,7 @@ import { Router, Route, browserHistory } from 'react-router'
 import { createApp, renderApp } from '@phenomic/preset-react-app/lib/client'
 import ReactGA from 'react-ga'
 
+import BlogContainer from './src/BlogContainer'
 import BlogPostContainer from './src/BlogPostContainer'
 import HomeContainer from './src/HomeContainer'
 import Html from './src/Html'
@@ -20,6 +21,7 @@ const routes = () =>
     <Route path='/' component={HomeContainer} />
     <Route path='/about' component={About} />
     <Route path='/after/:after' component={HomeContainer} />
+    <Route path='/blog' component={BlogContainer} />
     <Route path='/blog/*' component={BlogPostContainer} />
     <Route path='*' component={PageError} />
   </Router>

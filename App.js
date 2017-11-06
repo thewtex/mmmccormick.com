@@ -5,7 +5,7 @@ import ReactGA from 'react-ga'
 
 import BlogContainer from './src/BlogContainer'
 import BlogPostContainer from './src/BlogPostContainer'
-import HomeContainer from './src/HomeContainer'
+import Home from './src/Home'
 import Html from './src/Html'
 import PageError from './src/PageError'
 import About from './src/About'
@@ -18,9 +18,9 @@ const logPageView = () => {
 
 const routes = () =>
   <Router onUpdate={logPageView} history={browserHistory}>
-    <Route path='/' component={HomeContainer} />
+    <Route path='/' component={Home} />
     <Route path='/about' component={About} />
-    <Route path='/after/:after' component={HomeContainer} />
+    <Route path='/after/:after' component={Home} />
     <Route path='/blog' component={BlogContainer} />
     <Route path='/blog/*' component={BlogPostContainer} />
     <Route path='*' component={PageError} />

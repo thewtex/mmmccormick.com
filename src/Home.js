@@ -16,7 +16,7 @@ import Subhead from './Subhead'
 const cardWidth = 270
 const boxWidth = 280
 
-const Home = ({ posts }) => (
+const Home = () => (
   <Layout>
     <Head>
       <title>Matthew M. McCormick, Ph.D.</title>

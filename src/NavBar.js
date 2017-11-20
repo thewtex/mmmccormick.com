@@ -41,7 +41,50 @@ const CustomFontNavLink = styled(NavLink)`
   font-family: 'Open Sans Condensed', sans-serif;
 `
 
-const NavBar = props => (
+const AboutLink = props => {
+  return (
+    <CustomFontNavLink
+        is={Link}
+        href='/about'
+        children='About'
+      />
+  )
+}
+
+const BlogLink = props => {
+  return (
+    <CustomFontNavLink
+        is={Link}
+        href='/blog'
+        children='Blog'
+      />
+  )
+}
+
+const NavBar = ({ activeTab, children }) => {
+  let aboutTab = null
+  if (activeTab === 'About') {
+    aboutTab = ( <TabItem active>
+      <AboutLink/>
+   </TabItem> )
+  } else {
+    aboutTab = ( <TabItem>
+      <AboutLink />
+   </TabItem> )
+  }
+
+  let blogTab = null
+  if (activeTab === 'Blog') {
+    blogTab = ( <TabItem active>
+      <BlogLink/>
+   </TabItem> )
+  } else {
+    blogTab = ( <TabItem>
+      <BlogLink />
+   </TabItem> )
+  }
+
+  return (
   <nav>
     <Toolbar py={2}>
       <Avatar size={24} src='/images/NavBarHeadshot.jpg' />
@@ -56,17 +99,13 @@ const NavBar = props => (
         </Svg>
       </Hide>
       <Box mx='auto' />
-  {/*<Tabs>
-        <TabItem active> */}
-          <CustomFontNavLink
-            is={Link}
-            href='/about'
-            children='About'
-          />
-  {/*</TabItem>
-      </Tabs>*/}
+      <Tabs>
+        { aboutTab }
+        { blogTab }
+      </Tabs>
     </Toolbar>
   </nav>
-)
+  )
+}
 
 export default NavBar

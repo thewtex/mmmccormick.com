@@ -17,7 +17,7 @@ import Subhead from './Subhead'
 import Paragraph from './Paragraph'
 
 const About = () => (
-  <Layout>
+  <Layout navTab='About'>
     <Head>
       <link rel="stylesheet" href="/fonts/academicons-1.8.0.min.css"/>
     </Head>

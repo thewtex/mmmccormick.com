@@ -6,7 +6,7 @@ import Layout from './Layout'
 import PageError from './PageError'
 
 const Blog = ({ isLoading, posts }) => (
-  <Layout>
+  <Layout navTab='Blog'>
   {isLoading && "Loading..."}
   {!isLoading && (
       <ul>

@@ -8,8 +8,9 @@ import theme from './theme.js'
 import NavBar from './NavBar'
 import Footer from './Footer'
 
-const Layout = ({ children }) =>
-  <Provider theme={theme}>
+const Layout = ({ navTab, children }) => {
+  return (
+    <Provider theme={theme}>
     <Head>
       <html lang='en' />
       <meta charSet='utf-8' />
@@ -22,11 +23,13 @@ const Layout = ({ children }) =>
       <link rel='stylesheet' type='text/css' href='/fonts/fonts.css' />
       <link rel='stylesheet' href='/fonts/font-awesome-4.7.0.min.css' />
     </Head>
-    <NavBar />
+    <NavBar activeTab={ navTab } />
     {/* Blog About Portfolio
         OpenCV Twitter GitHub LinkedIn... */}
     <div>{children}</div>
     <Footer />
   </Provider>
+  )
+}
 
 export default Layout

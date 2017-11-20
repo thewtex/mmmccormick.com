@@ -17,7 +17,7 @@ const cardWidth = 270
 const boxWidth = 280
 
 const Home = () => (
-  <Layout>
+  <Layout navTab=''>
     <Head>
       <title>Matthew M. McCormick, Ph.D.</title>
       <meta name='Matthew M. McCormick, Ph.D.' content='Matt McCormick&#39;s Homepage' />
